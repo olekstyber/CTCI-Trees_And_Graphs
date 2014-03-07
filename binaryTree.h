@@ -29,3 +29,4 @@ public:
 	
 };
 
+#include "binaryTree.hpp"

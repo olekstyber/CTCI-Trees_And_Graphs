@@ -1,5 +1,3 @@
-#include "binaryTree.h"
-
 using namespace std;
 //This is an implementation of a binary tree data structure.
 
@@ -93,17 +91,4 @@ void BinaryTree<T>::print(node<T>* n){
 	print(n->left);
 	cout << "  ";
 	print(n->right);
-}
-
-int main(){
-	//char data[4] = {"a", "b", "c", "d"};
-	BinaryTree<char> newTree('a');
-	newTree.insert('z');
-	newTree.insert('d');
-	newTree.insert('r');
-	newTree.insert('f');
-	node<char>* search = newTree.search('d');
-	cout << search->value << endl;
-	newTree.print();
-	return 0;
 }
